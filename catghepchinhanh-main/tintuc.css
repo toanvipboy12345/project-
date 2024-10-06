@@ -1,0 +1,292 @@
+@media (min-width: 1201px) {
+    .content{
+        background-color: whitesmoke;
+        padding: 4.75rem 19rem;
+    }
+    .news-container{
+        background-color: #fff;
+        padding: 3rem;
+    }
+    .title{
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    .title p {
+        text-transform: uppercase;
+        font-weight: bold;
+        width: 30%;
+        margin: 0 auto; 
+        font-size: 1.6rem; 
+        font-family: 'Gotham-Ultra';
+        color: #383a5d;
+    }
+    
+    .title p::after{
+        content: "";
+        display: block;
+        width: 40%;
+        margin: 0.3rem auto;
+        height: 8px;
+        background-color: #bd945f;
+    }
+    .news-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem; 
+        margin-top: 1rem;
+    }
+    .news-list h4 {
+        margin-top: 1.5rem;
+    }
+    .news-list a {
+        font-size: 1.5rem; 
+        color: #bd945f;
+        font-weight: bold;
+        word-spacing: 7px; 
+        text-align: justify
+        font-family: 'Gotham-Ultra';
+    }
+    .news-list a:hover {
+        color: #e0bd91;
+        text-decoration: underline;
+    
+    
+    }
+    .news p{
+        text-align: justify;
+    }
+    
+    .news img{
+        width: 100%;
+        height: auto;
+    }
+    .page {
+        display: flex;
+        justify-content: center; /* Căn giữa theo chiều ngang */
+        align-items: center; /* Căn giữa theo chiều dọc nếu cần */
+        height: 100%; /* Đảm bảo thẻ cha có đủ chiều cao nếu cần */
+        margin-top: 1rem;
+    }
+    
+    .pagination {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        justify-content: space-around; 
+    }
+    
+    .pagination li {
+        margin: 0 10px; 
+    }
+    
+    .pagination a {
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        width: 2.5rem;
+        height: 2.5rem;
+        text-decoration: none;
+        color: #fff;
+        background-color: #e0e0e0;
+    }
+    
+    .pagination .active a {
+        background-color: #d6a976;
+        color: white;
+    }
+    
+    .pagination a:hover {
+        background-color: #e0bd91;
+    }
+    
+}
+@media (max-width: 767px) {
+    .content {
+        background-color: whitesmoke;
+        padding: 1rem; /* Giảm padding cho thiết bị di động */
+    }
+    .news-container {
+        background-color: #fff;
+        padding: 1rem; /* Giảm padding cho thiết bị di động */
+    }
+    .title {
+        text-align: center;
+        margin-bottom: 1.5rem; /* Giảm margin để tiết kiệm không gian */
+    }
+    .title p {
+        text-transform: uppercase;
+        font-weight: bold;
+        width: 100%; /* Để chữ chiếm toàn bộ chiều ngang */
+        margin: 0; 
+        font-size: 1.2rem; /* Giảm kích thước chữ cho di động */
+        font-family: 'Gotham-Ultra';
+        color: #383a5d;
+    }
+    .title p::after {
+        content: "";
+        display: block;
+        width: 50%; /* Điều chỉnh lại kích thước đường gạch dưới */
+        margin: 0.3rem auto;
+        height: 6px;
+        background-color: #bd945f;
+    }
+    .news-list {
+        display: grid;
+        grid-template-columns: 1fr; /* Chuyển sang 1 cột cho thiết bị di động */
+        gap: 1.5rem; /* Giảm khoảng cách giữa các bài viết */
+        margin-top: 1rem;
+    }
+    .news-list h4 {
+        margin-top: 1rem; /* Giảm khoảng cách giữa tiêu đề và ảnh */
+        font-size: 1.2rem; /* Giảm kích thước chữ cho tiêu đề */
+    }
+    .news-list a {
+        font-size: 1.2rem; /* Giảm kích thước chữ cho liên kết */
+        color: #bd945f;
+        font-weight: bold;
+        word-spacing: 5px; /* Điều chỉnh khoảng cách giữa các từ */
+        text-align: left; /* Căn trái chữ cho di động */
+        font-family: 'Gotham-Ultra';
+    }
+    .news-list a:hover {
+        color: #e0bd91;
+        text-decoration: underline;
+    }
+    .news p {
+        text-align: justify;
+        font-size: 1rem; /* Giảm kích thước chữ cho đoạn văn */
+    }
+    .news img {
+        width: 100%;
+        height: auto; /* Đảm bảo ảnh tự động điều chỉnh kích thước */
+    }
+    .page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin-top: 1rem;
+    }
+    .pagination {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        justify-content: space-around;
+    }
+    .pagination li {
+        margin: 0 5px; /* Giảm khoảng cách giữa các trang */
+    }
+    .pagination a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2rem;
+        height: 2rem; /* Giảm kích thước các nút trang */
+        text-decoration: none;
+        color: #fff;
+        background-color: #e0e0e0;
+    }
+    .pagination .active a {
+        background-color: #d6a976;
+        color: white;
+    }
+    .pagination a:hover {
+        background-color: #e0bd91;
+    }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+    .content {
+        background-color: whitesmoke;
+        padding: 2rem 5rem; /* Điều chỉnh padding phù hợp với màn hình vừa */
+    }
+    .news-container {
+        background-color: #fff;
+        padding: 2rem; /* Giảm padding để vừa với màn hình vừa */
+    }
+    .title {
+        text-align: center;
+        margin-bottom: 2rem; /* Giảm khoảng cách giữa tiêu đề và nội dung */
+    }
+    .title p {
+        text-transform: uppercase;
+        font-weight: bold;
+        width: 100%; /* Để chữ chiếm toàn bộ chiều ngang */
+        margin: 0; 
+        font-size: 1.4rem; /* Giảm kích thước chữ cho màn hình vừa */
+        font-family: 'Gotham-Ultra';
+        color: #383a5d;
+    }
+    .title p::after {   
+        content: "";
+        display: block;
+        width: 20%; /* Điều chỉnh kích thước đường gạch dưới */
+        margin: 0.3rem auto;
+        height: 8px;
+        background-color: #bd945f;
+    }
+    .news-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Chuyển sang 2 cột cho màn hình vừa */
+        gap: 2rem; /* Giảm khoảng cách giữa các bài viết */
+        margin-top: 1rem;
+    }
+    .news-list h4 {
+        margin-top: 1.2rem; /* Điều chỉnh khoảng cách giữa tiêu đề và ảnh */
+        font-size: 1.4rem; /* Kích thước chữ vừa cho tiêu đề */
+        text-transform: uppercase;
+    }
+    .news-list a {
+        font-size: 1.3rem; /* Kích thước chữ vừa cho liên kết */
+        color: #bd945f;
+        font-weight: bold;
+        word-spacing: 6px; /* Điều chỉnh khoảng cách giữa các từ */
+        text-align: left; /* Căn trái cho dễ đọc */
+        font-family: 'Gotham-Ultra';
+        text-align: justify;
+    }
+    .news-list a:hover {
+        color: #e0bd91;
+        text-decoration: underline;
+    }
+    .news p {
+        text-align: justify;
+        font-size: 1.1rem; /* Giảm kích thước chữ cho đoạn văn */
+    }
+    .news img {
+        width: 100%;
+        height: auto; /* Đảm bảo ảnh tự động điều chỉnh kích thước */
+    }
+    .page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin-top: 1rem;
+    }
+    .pagination {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        justify-content: space-around;
+    }
+    .pagination li {
+        margin: 0 7px; /* Điều chỉnh khoảng cách giữa các trang */
+    }
+    .pagination a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2.2rem;
+        height: 2.2rem; /* Điều chỉnh kích thước các nút trang */
+        text-decoration: none;
+        color: #fff;
+        background-color: #e0e0e0;
+    }
+    .pagination .active a {
+        background-color: #d6a976;
+        color: white;
+    }
+    .pagination a:hover {
+        background-color: #e0bd91;
+    }
+}

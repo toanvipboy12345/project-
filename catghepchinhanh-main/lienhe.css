@@ -1,0 +1,298 @@
+@media (min-width: 1201px) {
+    #banner {
+        background-image: url('./AnhCat/lien-he/banner.jpg');
+        background-size: 100% auto; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        height: 467px; 
+        opacity: 1;
+    }
+    
+    .logo-banner h2 {
+        color: #fff;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .logo-banner {
+        position: relative;
+        top: -2.5rem;
+    }
+    #main {
+        background-color: whitesmoke;
+        padding: 4rem 16rem;
+    }
+    
+    .content {
+        display: flex;  
+        background-color: #fff;
+        padding: 6rem;
+        justify-content: space-between;
+        margin-top: -150px;
+    }
+    
+    .form-container {
+        margin-right: 20px;
+        flex: 1; 
+    }
+    
+    .form-container h2 {
+        margin-bottom: 20px;
+        text-align: left;
+        color: #bd945f;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    table {
+        width: 100%; 
+    }
+    
+    td {
+        padding: 10px 0;
+    }
+    
+    input[type="text"], input[type="email"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        box-sizing: border-box;
+        border: solid #bd945f;
+    }
+    
+    textarea {
+        resize: none;
+    }
+    
+    .submit-btn {
+        background-color: #bd945f;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    
+    .image-container img {
+        max-width: 100%;
+        margin-right: 6rem;
+    }
+}
+@media (max-width: 767px) {
+    /* Banner */
+    #banner {
+        background-image: url('./AnhCat/lien-he/banner.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 250px; /* Điều chỉnh chiều cao banner */
+        padding: 1rem;
+        margin-top: 0;
+    }
+
+    .logo-banner {
+        display: flex;
+        flex-direction: column; /* Sắp xếp logo và tiêu đề theo chiều dọc */
+        align-items: center; /* Căn giữa nội dung */
+        text-align: center; /* Căn giữa tiêu đề và logo */
+        width: 100%;
+        margin-top: -2rem; /* Di chuyển lên trên 1 chút bằng cách giảm giá trị margin-top */
+    }
+    
+    .logo-banner h2 {
+        color: #fff;
+        font-size: 1.5rem; /* Giảm kích thước tiêu đề */
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+
+    /* Phần chính */
+    #main {
+        background-color: whitesmoke;
+        padding: 1.5rem; /* Điều chỉnh padding cho phần chính */
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column; /* Sắp xếp nội dung thành khối dọc */
+        background-color: #fff;
+        padding: 1.5rem; /* Giảm padding */
+        margin-top: -3rem; 
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    }
+
+    /* Ảnh */
+    .image-container {
+        margin-bottom: 1.5rem; /* Tạo khoảng cách dưới ảnh */
+        width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng */
+    }
+
+    .image-container img {
+        width: 100%; 
+        height: auto; /* Giữ tỷ lệ ảnh */
+    }
+
+    /* Form */
+    .form-container {
+        width: 100%; /* Đảm bảo form chiếm toàn bộ chiều rộng */
+        padding: 1rem; 
+    }
+
+    .form-container h2 {
+        text-align: center; 
+        font-size: 1.4rem; 
+        margin-bottom: 1rem;
+        color: #bd945f; 
+        font-family:'Gotham-Ultra';
+    }
+
+    table {
+        width: 100%;
+    }
+
+    td {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+        width: 100%; 
+        padding: 10px;
+        margin-top: 5px;
+        box-sizing: border-box;
+        border: 3px solid #bd945f; 
+
+        font-size: 1rem; 
+    }
+
+    .submit-btn {
+        width: 50%;
+        padding: 10px;
+        background-color: #bd945f;
+        color: white;
+        border: none;
+        font-size: 1rem;
+        border-radius: 4px;
+        margin: 0 auto; /* Căn giữa nút bằng cách tự động căn lề */
+        display: block; /* Đảm bảo nút là khối để căn giữa hoạt động */
+    }
+    
+
+    /* Căn chỉnh các phần tử form */
+    form {
+        width: 100%; /* Form chiếm hết chiều rộng màn hình */
+    }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+    /* Banner */
+    #banner {
+        background-image: url('./AnhCat/lien-he/banner.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 350px; /* Điều chỉnh chiều cao banner */
+        padding: 2rem;
+    }
+
+    .logo-banner {
+        display: flex;
+        flex-direction: column; /* Sắp xếp logo và tiêu đề theo chiều dọc */
+        align-items: center; /* Căn giữa nội dung */
+        text-align: center; /* Căn giữa tiêu đề và logo */
+        width: 100%;
+        margin-top: -1rem; /* Di chuyển logo lên trên một chút */
+    }
+
+    .logo-banner h2 {
+        color: #fff;
+        font-size: 2rem; /* Điều chỉnh kích thước tiêu đề */
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+
+    /* Phần chính */
+    #main {
+        background-color: whitesmoke;
+        padding: 2rem 6rem; /* Giảm padding để phù hợp với màn hình vừa */
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row; /* Sắp xếp nội dung theo hàng ngang */
+        background-color: #fff;
+        padding: 3rem; /* Giảm padding */
+        justify-content: space-between;
+        margin-top: -5rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Ảnh */
+    .image-container {
+        width: 40%; /* Giảm chiều rộng của hình ảnh để form có nhiều không gian hơn */
+        margin-right: 1rem; /* Giảm khoảng cách giữa ảnh và form */
+    }
+
+    .image-container img {
+        width: 100%; /* Ảnh sẽ chiếm toàn bộ chiều rộng container */
+        height: auto; /* Giữ tỷ lệ ảnh */
+        border-radius: 8px; /* Bo góc cho ảnh */
+    }
+
+    /* Form */
+    .form-container {
+        flex: 1; /* Chiếm phần còn lại của chiều ngang */
+        padding: 2rem; 
+    }
+
+    .form-container h2 {
+        text-align: left; /* Căn lề trái tiêu đề của form */
+        font-size: 1.8rem; /* Tăng kích thước tiêu đề */
+        margin-bottom: 1rem;
+        color: #bd945f;
+        font-family: 'Gotham-Ultra';
+    }
+
+    table {
+        width: 100%;
+    }
+
+    td {
+        padding: 10px 0;
+        text-align: left; /* Căn lề trái cho các phần tử trong form */
+    }
+
+    input[type="text"], input[type="email"], textarea {
+        width: 100%; /* Đảm bảo input chiếm toàn bộ chiều rộng */
+        padding: 12px;
+        margin-top: 5px;
+        box-sizing: border-box;
+        border: 2px solid #bd945f; 
+        border-radius: 4px;
+        font-size: 1rem; /* Kích thước chữ hợp lý */
+    }
+
+    .submit-btn {
+        width: 100%; /* Nút gửi chiếm toàn bộ chiều ngang form */
+        padding: 10px;
+        background-color: #bd945f;
+        color: white;
+        border: none;
+        font-size: 1rem;
+        border-radius: 4px;
+        margin-top: 1rem; /* Khoảng cách giữa nút và các input khác */
+        display: block;
+    }
+    form {
+        width: 100%; 
+    }
+}
+
+  

@@ -1,0 +1,805 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@media (min-width: 1201px) {
+  #banner {
+    background-image: url("AnhCat/san-pham/XEMTATCA_SANPHAM.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 540px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 2rem;
+  }
+  
+  .banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 80%; /* Điều chỉnh lại để phần nội dung có thêm không gian */
+    margin-left: auto;
+  }
+  
+  .text-content {
+    transform: translateX(-22.5rem); /* Thay thế margin-left bằng transform */
+  }
+  
+  .text-content h1 {
+    font-size: 3rem;
+    color: #2e3e66;
+    font-family: 'Gotham-Light', sans-serif;
+    line-height: 1.2;
+    white-space: nowrap; /* Đảm bảo chữ không bị xuống dòng */
+  }
+  
+  /* Style for handwritten text */
+  .text-content h1 .handwriting {
+    font-family: 'Satisfy', cursive;
+    font-size: 4rem;
+    color: #bd945f;
+  }
+  
+  .banner-btn {
+    display: inline-block;
+    background-color: white;
+    color: #2e3e66;
+    padding: 0.75rem 2rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+  }
+  
+  .banner-btn:hover {
+    background-color: #bd945f;
+    color: white;
+  }
+  
+  /* Nút "prev" và "next" nằm ở hai phía của banner */
+  .prev-btn, .next-btn {
+    cursor: pointer;
+    font-size: 2rem;
+    color: #2e3e66;
+    background: rgba(255, 255, 255, 0.8);
+    width: 3rem; 
+    height: 3rem; 
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Định vị các nút prev/next và tăng khoảng cách từ lề */
+  .prev-btn {
+    position: absolute;
+    left: 16rem; /* Tăng khoảng cách từ lề trái hơn nữa */
+  }
+  
+  .next-btn {
+    position: absolute;
+    right: 16rem; /* Tăng khoảng cách từ lề phải hơn nữa */
+  }
+  
+  .prev-btn:hover, .next-btn:hover {
+    background: #bd945f;
+    color: white;
+  }
+  
+  #main {
+    background-color: whitesmoke;
+    padding: 4.5rem 18rem;
+  }
+  .content {
+    background-color: white;
+    display: flex;
+    flex-direction: column; /* Stack the child divs vertically */ 
+  }
+  .filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+  }
+
+  .price,
+  .arrange {
+    display: flex;
+    align-items: center;
+  }
+
+  .price label {
+    margin-right: 0.6rem;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .price span {
+    margin-right: 15px;
+    color: #b5855f;
+    cursor: pointer;
+  }
+
+  .arrange {
+    position: relative;
+    color: #333;
+    cursor: pointer;
+    width: 15rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .arrange::after {
+    content: " ▼";
+    font-size: 0.75rem; /* 12px */
+    padding-left: 0.5rem; /* Small spacing between text and arrow */
+  }
+
+  .arrange ul {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 1.25rem; /* 20px */
+    list-style: none;
+    padding: 0.3125rem; /* 5px */
+    background-color: #fff;
+    border: 0.5rem solid #bd945f; /* Adjusted border */
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1); /* Shadow effect */
+    min-width: 100%; /* Ensure dropdown width matches the parent width */
+  }
+
+  .arrange li {
+    padding: 0.3125rem 0.625rem; /* 5px 10px */
+    color: #333;
+    cursor: pointer;
+    position: relative;
+    margin-left: 0.5rem;
+    padding-left: 1.5rem;
+  }
+
+  .arrange li.selected::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #bd945f;
+    font-size: 1.2rem;
+    margin-right: 2rem;
+  }
+
+  .product-container {
+    padding: 3rem;
+  }
+  .title p {
+    font-weight: bold;
+    font-size: 1.5rem; /* 24px */
+    color: #383a5d;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+  }
+
+  .title p::after {
+    content: "";
+    display: block;
+    width: 8rem;
+    height: 0.5rem;
+    background-color: #bd945f;
+    position: absolute;
+    bottom: -0.625rem;
+    left: 0;
+  }
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+    margin-top: 1rem;
+  }
+  .product {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product-infor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .product-infor h4 {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: #383a5d;
+  }
+  .product-infor p {
+    color: #383a5d;
+  }
+  .page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto 2rem auto; /* Giữ auto ở hai bên và thêm margin bottom */
+    width: 25%;
+  }
+
+  .pagination {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: space-around; /* Căn giữa theo chiều ngang */
+  }
+
+  .pagination li {
+    margin: 0 10px;
+  }
+
+  .pagination a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #e0e0e0;
+  }
+
+  .pagination .active a {
+    background-color: #d6a976;
+    color: white;
+  }
+
+  .pagination a:hover {
+    background-color: #c9c9c9;
+  }
+}
+
+/* Responsive CSS cho màn hình nhỏ hơn 767px */
+
+@media (max-width: 767px) {
+  /* Responsive cho banner */
+  #banner {
+    background-image: url("AnhCat/san-pham/XEMTATCA_SANPHAM.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    position: relative; /* Để định vị các nút prev và next */
+  }
+
+  .banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .prev-btn, .next-btn {
+    font-size: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%; /* Căn giữa theo chiều dọc */
+    transform: translateY(-50%); /* Căn chỉnh chính xác ở giữa */
+  }
+
+  /* Nút prev nằm bên trái */
+  .prev-btn {
+    left: 0; /* Sát lề trái */
+    margin-left: 0.5rem; /* Đặt khoảng cách từ lề trái */
+  }
+
+  /* Nút next nằm bên phải */
+  .next-btn {
+    right: 0; /* Sát lề phải */
+    margin-right: 0.5rem; /* Đặt khoảng cách từ lề phải */
+  }
+
+  .prev-btn:hover, .next-btn:hover {
+    background-color: #bd945f;
+    color: white;
+  }
+  
+  .text-content {
+    transform: none; /* Loại bỏ transform */
+    margin: 0;
+  }
+  
+  .text-content h1 {
+    font-size: 1.8rem; /* Giảm kích thước tiêu đề */
+    color: #2e3e66;
+    font-family: 'Gotham-Light', sans-serif;
+    line-height: 1.2;
+    white-space: nowrap; /* Đảm bảo chữ không bị xuống dòng */
+    white-space: normal; /* Cho phép xuống dòng trên màn hình nhỏ */
+  }
+  
+  .text-content h1 .handwriting {
+    font-family: 'Satisfy', cursive;
+    font-size: 2.5rem;
+    color: #bd945f;
+  }
+  
+  .banner-btn {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+    display: inline-block;
+    background-color: #bd945f;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+
+
+  /* Responsive cho phần nội dung chính */
+  #main {
+    background-color: whitesmoke;
+    padding: 1rem;
+  }
+
+  .content {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Responsive cho phần filter */
+  .filter {
+    background-color: whitesmoke;
+    flex-direction: column;
+
+    align-items: flex-start; /* Căn trái các phần tử trong filter */
+    padding: 0;
+  }
+
+
+  .price,
+  .arrange {
+    width: 100%;
+    text-align: left; /* Căn trái text */
+    margin-bottom: 1rem;
+  }
+  .price span {
+    margin-right: 20px; /* Tăng khoảng cách giữa các span */
+  }
+  
+  .price span:last-child {
+    margin-right: 0; /* Đảm bảo span cuối không có margin-right */
+  }
+  
+  .price span,
+  .arrange ul li {
+    color: #b5855f;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  .arrange {
+    position: relative;
+    width: 100%; /* Chiếm hết chiều rộng để dễ căn chỉnh */
+    text-align: left; /* Căn trái phần sắp xếp */
+    color: #333;
+  }
+  .arrange::after {
+    content: " ▼";
+    font-size: 0.75rem; /* 12px */
+    padding-left: 0.5rem; /* Small spacing between text and arrow */
+  }
+
+  .arrange ul {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Căn chỉnh dropdown chiếm hết chiều rộng */
+    text-align: left;
+    display: none;
+    border: 0.5rem solid #bd945f; /* Adjusted border */
+  }
+
+  .arrange ul li {
+    padding: 0.3rem 0.3rem 0.3rem 1.5rem; /* Thêm padding-left để tạo khoảng cách giữa dấu ✓ và nội dung */
+    display: block;
+    position: relative; /* Đảm bảo dấu "✓" nằm trong phạm vi của li */
+    color: black;
+}
+
+.arrange li.selected::before {
+    content: "✓";
+    position: absolute;
+    left: 0; /* Đảm bảo dấu "✓" ở bên trái của li */
+    color: #bd945f;
+    font-size: 1.2rem;
+    margin-left: 0.5rem; /* Điều chỉnh khoảng cách giữa dấu "✓" và cạnh trái */
+}
+
+  /* Responsive cho phần danh sách sản phẩm */
+  .product-container {
+    padding: 1rem;
+  }
+
+  .title p {
+    font-size: 1.2rem;
+    color: #383a5d;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+
+  .title p::after {
+    content: "";
+    display: block;
+    width: 4rem;
+    height: 0.3rem;
+    background-color: #bd945f;
+    position: absolute;
+    left: 8%;
+  }
+
+  .product-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .product {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #fff;
+  }
+
+  .product-infor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-infor img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .product-infor h4 {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: #383a5d;
+    font-size: 1rem;
+  }
+
+  .product-infor p {
+    color: #383a5d;
+  }
+
+  /* Responsive cho phần phân trang */
+  .page {
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .pagination {
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+
+  .pagination li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+
+  .pagination a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #e0e0e0;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+  .pagination .active a {
+    background-color: #d6a976;
+    color: white;
+  }
+
+  .pagination a:hover {
+    background-color: #c9c9c9;
+  }
+}
+
+
+
+/* Responsive CSS cho màn hình từ 768px đến 1200px */
+@media (min-width: 768px) and (max-width: 1200px) {
+  /* Responsive cho banner */
+  #banner {
+    background-image: url("AnhCat/san-pham/XEMTATCA_SANPHAM.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px; /* Giảm chiều cao banner cho màn hình trung bình */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5rem;
+    position: relative;
+  }
+
+  .banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .text-content h1 {
+    font-size: 2.5rem; /* Kích thước tiêu đề cho màn hình trung bình */
+    color: #2e3e66;
+    font-family: 'Gotham-Light', sans-serif;
+    line-height: 1.2;
+    white-space: normal; /* Cho phép tiêu đề xuống dòng */
+  }
+
+  .text-content h1 .handwriting {
+    font-family: 'Satisfy', cursive;
+    font-size: 3.5rem; /* Giảm kích thước chữ viết tay */
+    color: #bd945f;
+  }
+
+  .banner-btn {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    display: inline-block;
+    background-color: #bd945f;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+
+  .prev-btn, .next-btn {
+    font-size: 1.75rem;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .prev-btn {
+    left: 1rem; /* Điều chỉnh vị trí cho màn hình trung bình */
+  }
+
+  .next-btn {
+    right: 1rem; /* Điều chỉnh vị trí cho màn hình trung bình */
+  }
+
+  .prev-btn:hover, .next-btn:hover {
+    background-color: #bd945f;
+    color: white;
+  }
+
+  /* Responsive cho phần nội dung chính */
+  #main {
+    background-color: whitesmoke;
+    padding: 1rem 2rem; /* Giảm padding để căn chỉnh lại */
+  }
+
+  .content {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Responsive cho phần filter */
+  .filter {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #f5f5f5;
+  }
+
+  .price,
+  .arrange {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .price label {
+    margin-right: 0.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .price span {
+    margin-right: 10px;
+    color: #b5855f;
+    cursor: pointer;
+  }
+
+  .arrange {
+    position: relative;
+    width: auto; /* Không cần chiếm hết chiều rộng */
+    text-align: left;
+    color: #333;
+  }
+  
+  .arrange ul {
+    display: none;
+    position: absolute;
+    left: 0; /* Căn chỉnh dropdown về phía trái */
+    top: 1.25rem;
+    list-style: none;
+    padding: 0.3125rem;
+    background-color: #fff;
+    border: 0.3rem solid #bd945f;
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+    min-width: 15rem; /* Điều chỉnh kích thước dropdown */
+    z-index: 10; /* Đảm bảo dropdown không đè lên nội dung */
+  }
+
+  .arrange li {
+    padding: 0.5rem 1rem;
+    color: #333;
+    cursor: pointer;
+  }
+
+  .arrange li.selected::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #bd945f;
+    font-size: 1.2rem;
+    margin-right: 2rem;
+  }
+
+  /* Responsive cho phần danh sách sản phẩm */
+  .product-container {
+    padding: 2rem;
+  }
+
+  .title p {
+    font-weight: bold;
+    font-size: 1.2rem; /* Điều chỉnh font-size nhỏ hơn */
+    color: #383a5d;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+  }
+
+  .title p::after {
+    content: "";
+    display: block;
+    width: 6rem;
+    height: 0.4rem;
+    background-color: #bd945f;
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+  }
+
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Giảm còn 3 cột để vừa với màn hình */
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .product {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    padding: 1rem;
+    background-color: #fff;
+    text-align: center;
+    width: 100%; /* Đảm bảo sản phẩm chiếm toàn bộ chiều rộng */
+}
+
+.product-infor {
+    display: flex;
+    flex-direction: column; /* Sắp xếp nội dung theo cột */
+    align-items: center; /* Căn giữa nội dung theo chiều ngang */
+    justify-content: center; /* Căn giữa nội dung theo chiều dọc */
+    text-align: center; /* Đảm bảo văn bản được căn giữa */
+    width: 100%; /* Chiếm toàn bộ chiều rộng của sản phẩm */
+}
+
+.product-infor img {
+  width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng */
+  height: auto; /* Tự động điều chỉnh chiều cao để giữ tỷ lệ */
+  max-width: 200px; /* Giới hạn kích thước tối đa của ảnh */
+  margin-bottom: 1rem;
+}
+
+.product-infor h4 {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: #383a5d;
+    font-size: 1rem; /* Giảm kích thước font */
+    white-space: nowrap; /* Giữ văn bản trên cùng một dòng */
+}
+
+.product-infor p {
+    color: #383a5d;
+    font-size: 0.9rem; /* Giảm kích thước font của các đoạn văn */
+}
+  
+  .page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto 2rem auto;
+    width: 50%;
+  }
+
+  .pagination {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: space-around;
+  }
+
+  .pagination li {
+    margin: 0 5px;
+  }
+
+  .pagination a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+  }
+
+  .pagination .active a {
+    background-color: #d6a976;
+    color: white;
+  }
+
+  .pagination a:hover {
+    background-color: #c9c9c9;
+  }
+}

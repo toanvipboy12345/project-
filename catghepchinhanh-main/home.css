@@ -1,0 +1,1744 @@
+@media (min-width: 1201px) {
+  #first {
+    background-image: url(./AnhCatTC/banner.png);
+    height: 51.5rem;
+  }
+
+  #first .container {
+    position: relative;
+  }
+
+  #first .banner-content {
+    position: absolute;
+    top: 7.25rem;
+    left: 3.25rem;
+  }
+
+  #first h3,
+  #first h3 > span {
+    font-family: Gotham-Ultra;
+    font-size: 2.875rem;
+    text-transform: uppercase;
+  }
+  #first p {
+    width: width: 45%;
+    text-align: justify;
+  }
+
+  #first .btn-banner {
+    background-color: #bd945f;
+    padding: 1.25rem 2rem;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-family: Gotham-Ultra;
+    color: #fff;
+  }
+  #second {
+    height: auto;
+    background-color: whitesmoke;
+    position: relative;
+  }
+  #second .container {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center;
+    height: 30rem;
+    padding-top: 2rem;
+    text-align: center;
+    transform: translateY(-20%);
+  }
+  .category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category img {
+    width: 120px;
+    height: 120px;
+  }
+  .category p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+    font-family: "Gotham-Ultra";
+  }
+
+  #second h3 {
+    text-transform: uppercase;
+    font-family: "Gotham-Ultra";
+    margin-top: 15px;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+  }
+  #second h3::after{
+      content: '';
+  position: absolute;
+  top: 100%;
+  transform: translateX(-50%);
+  left: 50%;
+  height: 8px;
+  width: 140px;
+  background-color: #bd945f;
+  display: block;
+  }
+  .container-product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  .product-card {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0 5px 0 5px;
+    padding: 10px;
+  }
+
+  .product-image img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .product-info {
+    padding: 10px;
+  }
+
+  .product-info h4 {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: "Gotham-Ultra";
+    margin: 0;
+  }
+
+  .rating {
+    color: #ffd700;
+    font-size: 20px;
+    height: 30px;
+  }
+
+  .product-info p {
+    color: #555;
+    margin: 0;
+    font-size: 15px;
+  }
+
+  .price {
+    color: black !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    margin: 0 !important;
+}
+
+  .next,
+  .prev {
+    background-color: #bd945f;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-size: 25px;
+    color: white;
+    transform: translateY(150px);
+  }
+  .next {
+    margin-left: 10px;
+  }
+  #third {
+    background-image: url(./AnhCatTC/back-anh.jpg);
+    height: auto;
+    position: relative;
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+
+  /* Lớp phủ */
+  #third::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Lớp phủ màu đen mờ */
+    z-index: 1; /* Z-index thấp để lớp phủ nằm dưới các phần tử khác */
+  }
+
+  /* Các phần tử phía trên lớp phủ */
+  #third h3,
+  .about-img,
+  .content-p,
+  .content-box {
+    position: relative; /* Đảm bảo các phần tử này nằm trong cùng bối cảnh với lớp phủ */
+    z-index: 2; /* Z-index cao hơn để nằm trên lớp phủ */
+  }
+
+  #third h3 {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Gotham-Ultra";
+    position: relative;
+    width: 50%;
+  }
+  #third .firsth {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 105px;
+    margin-bottom: 65px;
+  }
+  #third h3:last-child {
+    color: #fff;
+
+    text-transform: uppercase;
+    font-family: "Gotham-Ultra";
+  }
+  #third .about {
+    display: flex;
+    width: 61%;
+    margin: 0 auto;
+  }
+  .about-img {
+    margin-right: 35px;
+  }
+  .content-p {
+    width: 571px;
+    height: 361px;
+  }
+  .content-p > p {
+    color: #fff;
+    text-align: justify;
+  }
+  .content-p span {
+    font-family: "Gotham-Ultra";
+    text-transform: uppercase;
+    font-size: 11px;
+  }
+  .p1,
+  .p2,
+  .sp1 {
+    text-transform: uppercase;
+    font-size: 22.5px !important;
+  }
+  .p1 {
+    margin: 0;
+  }
+  .sp3 {
+    font-family: "Gotham-Medium" !important;
+  }
+  .p3,
+  .p4 {
+    font-size: 11px;
+    width: 500px;
+  }
+  .p4 {
+    margin-bottom: 25px;
+  }
+  .gallery {
+    display: flex;
+    bottom: 0;
+  }
+  .p-img {
+    width: 120px;
+    height: 120px;
+    margin-right: 8px;
+    position: relative;
+  }
+  .p-img img {
+    width: 100%;
+  }
+  .p-img:last-child::after {
+    content: "Xem thêm >";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2); /* Lớp phủ đen mờ */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    z-index: 2;
+  }
+  #third .secondh {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    margin-top: 110px;
+    margin-bottom: 65px;
+  }
+  .content-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+    column-gap: 35px;
+    width: 60.5%;
+    margin: auto;
+    margin-bottom: 60px;
+  }
+  .content-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    height: 116px;
+  }
+
+  .content-item img {
+    max-width: 50%;
+    height: auto;
+    margin-left: 20px;
+  }
+
+  .text-img {
+    width: 500px;
+    margin-left: 20px;
+    height: 115px;
+  }
+
+  .text-img h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    padding-top: 8%;
+    color: #bd945f;
+    margin-bottom: 0;
+  }
+
+  .text-img p {
+    margin-top: 0;
+    font-size: 13px;
+  }
+  #banner-cuoi {
+    height: auto;
+    background-color: #fff;
+    position: relative;
+  }
+  #banner-cuoi .firsth {
+    position: relative;
+    text-transform: uppercase;
+    font-family: "Gotham-Ultra";
+    color: #2c2e53;
+    text-align: center;
+    margin-top: 105px;
+    margin-bottom: 70px;
+  }
+  #banner-cuoi .about {
+    display: flex;
+    width: 62%;
+    margin: 0 auto;
+  }
+  .item-img-p {
+    position: relative;
+    background-image: url(./AnhCatTC/tin-tuc/tintuc-1.jpg);
+    width: 55%;
+    margin-right: 45px;
+  }
+  .item-img-p img {
+    display: block;
+    width: 98%;
+    height: auto;
+  }
+  .item-p {
+    position: absolute;
+    width: 100%;
+    background-color: #bd945f;
+    padding: 10px;
+    box-sizing: border-box;
+    bottom: 0;
+  }
+  .item-p h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #fff;
+    font-size: 23px;
+    width: 550px;
+    margin-top: 10px;
+  }
+
+  .item-p p {
+    margin: 5px 0 0;
+    font-size: 10px;
+    font-family: "Gotham-Thin";
+    width: 550px;
+    text-align: justify;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+  .item-p h2,
+  .item-p p {
+      margin-left: 10px;
+      width: 98%;
+  }
+  .item-p p{
+      font-size: 11px;
+  }
+  .item-p-img-p {
+    width: 45%
+  }
+  .p-img-p {
+    display: flex;
+    height: 137px;
+    margin-bottom: 25px;
+  }
+  .p-h {
+    margin-left: 40px;
+    height: 100%;
+  }
+  .p-h h2 {
+    color: #bd945f;
+    font-size: 19px;
+    text-align: justify;
+  }
+  .p-h p {
+    color: #000000;
+    font-size: 11.5px;
+    margin-top: 3px;
+    font-family: "Gotham-Thin";
+    text-align: justify;
+  }
+  .more {
+    border: none;
+    background-color: #fff;
+    color: #bd945f;
+    text-transform: uppercase;
+  }
+  #banner-cuoi .secondh {
+    position: relative;
+    text-transform: uppercase;
+    font-family: "Gotham-Ultra";
+    color: #2c2e53;
+    text-align: center;
+    margin-top: 105px;
+    margin-bottom: 65px;
+  }
+  .category-item {
+    text-align: center;
+    width: 100%;
+    margin-left: 20px;
+    margin-bottom: 105px;
+  }
+  .category-item img {
+    width: 175px;
+  }
+  .end-section {
+    width: 100%;
+    background-image: url(./AnhCatTC/lienhe-bg.jpg);
+    height: 300px;
+    position: relative;
+    padding-top: 1px;
+    display: flex;
+  }
+  .img-ghe {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    bottom: -45%;
+    left: 12%;
+    width: 350px;
+    height: auto;
+  }
+  .end-section > p {
+    color: #fff;
+    margin-top: 110px;
+    margin-left: 505px;
+    position: relative;
+    height: fit-content;
+    font-size: 25px;
+  }
+  .end-section p span {
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .u-contact {
+    margin-top: 100px;
+    margin-left: 180px;
+  }
+  .u-contact-lb {
+    font-size: 12px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  .u-contact input {
+    width: 412px;
+    height: 65px;
+    padding-left: 15px;
+    margin-right: 10px;
+  }
+  .u-contact input,
+  .u-contact button {
+    border: none;
+    outline: none;
+  }
+  .end-section p.active::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 17.5%;
+    transform: translateX(-50%);
+    height: 8px;
+    width: 100px;
+    background-color: #ffffff;
+    display: block;
+  }
+  .u-contact-bt {
+    height: 65px;
+    width: 130px;
+    margin-left: 20px;
+    background-color: #fff;
+  }
+  
+#third>.firsth::after{
+  content: '';
+  position: absolute;
+  top: 100%;
+  transform: translateX(-50%);
+  left: 50%;
+  height: 8px;
+  width: 140px;
+  background-color: #bd945f;
+  display: block;
+}
+#third>.secondh:after{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 8px;
+  width: 140px;
+  background-color: #bd945f;
+  display: block;
+}
+
+#banner-cuoi>.firsth::after{
+  content: '';
+  position: absolute;
+  top: 100%;
+  transform: translateX(-50%);
+  left: 50%;
+  height: 8px;
+  width: 140px;
+  background-color: #bd945f;
+  display: block;
+}
+#banner-cuoi>.secondh::after{
+  content: '';
+  position: absolute;
+  top: 100%;
+  transform: translateX(-50%);
+  left: 50%;
+  height: 8px;
+  width: 140px;
+  background-color: #bd945f;
+  display: block;
+}
+
+header .menu ul li:hover>a::after,
+header .menu ul li>a.active::after {
+  display: block;
+}
+
+}
+/* Responsive CSS cho #first trên màn hình nhỏ hơn 767px */
+@media (max-width: 767px) {
+  #first {
+    background-image: url(./AnhCatTC/banner.png); /* Vẫn giữ banner */
+    background-size: cover; /* Đảm bảo background phù hợp với màn hình nhỏ */
+    background-position: center; /* Căn giữa hình ảnh */
+    height: 30rem; /* Giảm chiều cao banner để phù hợp với thiết bị nhỏ */
+  }
+
+  #first .container {
+    position: relative;
+    padding: 0 10px; /* Thêm padding để tạo khoảng cách với cạnh màn hình */
+  }
+
+  #first .banner-content {
+    position: absolute;
+    top: 3.5rem;
+    left: 1.25rem;
+    right: 1.25rem;
+    text-align: center;
+    width: 90%;
+  }
+
+  #first h3,
+  #first h3 > span {
+    font-size: 1.875rem;
+    line-height: 2rem; /* Giãn dòng để dễ đọc hơn */
+  }
+
+  #first p {
+    width: 100%; /* Đặt chiều rộng 100% để vừa với màn hình */
+    font-size: 0.9rem; /* Giảm kích thước chữ cho đoạn văn */
+    text-align: center; /* Căn giữa đoạn văn để trông đẹp hơn */
+  }
+
+  #first .btn-banner {
+    background-color: #bd945f;
+    padding: 1rem 1.5rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: Gotham-Ultra;
+    color: #fff;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 0;
+  }
+  /* //Banner giua */
+  #second {
+    padding: 20px 0;
+    height: auto; /* Đặt chiều cao tự động để phù hợp với nội dung */
+    background-color: whitesmoke;
+  }
+
+  #second .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Chia thành 2 cột */
+    gap: 10px; /* Khoảng cách giữa các mục */
+    padding: 0 10px;
+    height: auto; /* Đặt chiều cao tự động */
+    background-color: #fff;
+  }
+
+  .category {
+    margin-bottom: 15px; /* Thêm khoảng cách dưới mỗi mục */
+    text-align: center;
+  }
+
+  .category img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px; /* Thêm khoảng cách giữa icon và text */
+  }
+
+  .category p {
+    font-size: 0.9rem; /* Giảm kích thước chữ */
+    margin: 0; /* Loại bỏ khoảng cách dư thừa */
+  }
+
+  #second h3 {
+    font-size: 1.5rem; /* Giảm kích thước heading */
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Gotham-Ultra';
+    position: relative;
+
+  }
+  /* Responsive cho container-product */
+  .container-product {
+    position: relative; /* Để đặt nút prev và next nằm bên ngoài danh sách sản phẩm */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 0 40px;
+  }
+
+  .product-card {
+    width: 100%; /* Đặt chiều rộng sản phẩm chiếm toàn bộ ô grid */
+    padding: 10px; /* Thêm khoảng cách bên trong sản phẩm */
+  }
+
+  .product-image img {
+    width: 100%; /* Hình ảnh chiếm toàn bộ chiều rộng sản phẩm */
+    height: auto;
+  }
+
+  .product-info {
+    text-align: center;
+  }
+
+  .product-info h4 {
+    font-family: 'Gotham-Ultra';  
+    font-size: 1.1rem; /* Giữ kích thước chữ tương đối lớn */
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    margin-top: 15px;
+  }
+  .rating {
+    font-size: 1.1rem; /* Giảm nhẹ kích thước của đánh giá sao */
+    color: #ffd700;
+  }
+
+  .price {  
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 5px;
+  }
+
+  .next,
+  .prev {
+    width: 35px;
+    height: 35px;
+    font-size: 20px; /* Kích thước nút */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bd945f;
+    border-radius: 50%; /* Bo tròn nút */
+    color: white;
+    position: absolute;
+    top: 50%; /* Đặt nút giữa chiều cao */
+    transform: translateY(-50%); /* Căn chỉnh nút giữa */
+    border: none;
+  }
+
+  .prev {
+    left: 10px; /* Đặt nút prev ở bên trái */
+  }
+
+  .next {
+    right: 10px; /* Đặt nút next ở bên phải */
+  }
+  #third {
+    background-image: url(./AnhCatTC/back-anh.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px 10px; /* Điều chỉnh padding cho phù hợp */
+    position: relative;
+    z-index: -3;
+  }
+
+  #third .firsth,
+  #third .secondh {
+    font-size: 1.5rem; /* Giảm kích thước tiêu đề */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Gotham-Ultra';
+    text-transform: uppercase;
+    position: relative;
+    z-index: 3;
+    color: #fff;
+  }
+  #third::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: -2;
+  }
+  #third .about {
+    flex-direction: column; /* Chuyển nội dung từ flex sang cột */
+    width: 90%; /* Đảm bảo nội dung không tràn ra ngoài màn hình */
+    margin: 0 auto;
+  }
+
+  .about-img {
+    margin: 0 auto 15px auto; /* Đặt hình ảnh căn giữa và thêm khoảng cách bên dưới */
+    width: 100%;
+  }
+
+  .about-img img {
+    width: 100%; /* Hình ảnh chiếm toàn bộ chiều rộng */
+    height: auto;
+  }
+
+  /* Điều chỉnh phần nội dung văn bản */
+  .content-p {
+    color: #fff;
+    margin: 0 auto;
+    text-align: justify;
+  }
+
+  .content-p p {
+    font-size: 1rem; /* Kích thước chữ vừa phải */
+    margin-bottom: 7px; /* Thêm khoảng cách dưới mỗi đoạn văn */
+  }
+
+  .p1,
+  .p2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+
+  .p3,
+  .p4 {
+    font-size: 1rem; /* Kích thước chữ nhỏ hơn cho các đoạn văn dài */
+  }
+
+  /* Điều chỉnh phần hình ảnh */
+  .gallery {
+    display: flex;
+    justify-content: space-between; /* Giữ khoảng cách giữa các ảnh */
+    margin-top: 20px;
+  }
+
+  /* Thiết lập kích thước của phần tử chứa hình ảnh */
+  /* Đảm bảo phần tử chứa ảnh có vị trí và kích thước chính xác */
+  .p-img {
+    position: relative;
+    width: calc(25% - 10px);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .p-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+  }
+
+  /* Lớp phủ đen mờ khớp với ảnh */
+  .p-img:last-child::after {
+    content: "Xem thêm >";
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    z-index: 2;
+    box-sizing: border-box;
+  }
+
+  .p-img:last-child:hover::after {
+    background-color: rgba(0, 0, 0, 0.7); /* Tăng độ tối khi hover */
+  }
+
+  .content-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Hai cột */
+    gap: 20px; /* Khoảng cách giữa các mục */
+    width: 90%; /* Giữ nội dung trong khung giới hạn */
+    margin: auto;
+  }
+  .p3 span{
+      text-transform: uppercase;
+  }
+  .content-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .content-item img {
+    width: 50px; /* Kích thước cố định cho hình ảnh */
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .text-img {
+    width: auto; /* Chiều rộng tự động cho văn bản */
+    margin: 0; /* Loại bỏ khoảng cách */
+    text-align: left; /* Căn trái nội dung */
+  }
+
+  .text-img h2 {
+    font-size: 1.2rem;
+    padding-top: 0;
+    margin-bottom: 5px;
+    color: #bd945f;
+    text-align: center;
+  }
+
+  .text-img p {
+    font-size: 0.9rem;
+    color: #333;
+    text-align: center;
+    
+  }
+  /* //Cuoi */
+  #banner-cuoi .firsth,
+  #banner-cuoi .secondh {
+    font-size: 1.5rem; /* Giảm kích thước tiêu đề */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center; /* Căn giữa tiêu đề */
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Gotham-Ultra';
+  }
+
+  /* Nội dung tin tức */
+  #banner-cuoi .about {
+    display: block; /* Chuyển thành dạng khối */
+    width: 100%; /* Chiếm toàn bộ chiều rộng màn hình */
+    margin: 0 auto; /* Căn giữa nội dung */
+    padding: 10px; /* Tạo không gian giữa các phần tử */
+  }
+
+  .item-img-p {
+    position: relative;
+    background-image: url(./AnhCatTC/tin-tuc/tintuc-1.jpg);
+    width: 100%;
+    height: 450px; /* Chiều cao giảm để hiển thị tốt hơn */
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .item-p {
+    text-align: justify;
+    position: absolute;
+    padding: 20px 0 0 20px;
+    background-color: rgba(
+      189,
+      148,
+      95,
+      0.9
+    ); /* Điều chỉnh màu nền và độ trong suốt */
+    color: #fff;
+    bottom: 0;
+    width: 100%; /* Đảm bảo phần văn bản bao phủ toàn bộ chiều rộng */
+    box-sizing: border-box;
+  }
+
+  .item-p h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .item-p p {
+    font-size: 12px;
+    line-height: 1.1;
+    color: #000000;
+    font-family: 'Gotham-Thin';
+  }
+  .item-p h2, .item-p p{
+      width: 98%;
+  }
+  /* Các mục tin tức bên phải */
+  .item-p-img-p {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Thêm khoảng cách giữa các phần tử */
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .p-img-p {
+    display: flex;
+    align-items: flex-start; /* Căn chỉnh hình ảnh lên đầu văn bản */
+    gap: 10px; /* Khoảng cách giữa hình ảnh và phần văn bản */
+    width: 100%;
+  }
+
+  .p-img-p img {
+    width: 140px;
+    height: auto;
+    object-fit: cover;
+    margin-top: 0;
+  }
+
+  .p-h {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Giữ phần tiêu đề và đoạn văn cách đều nhau */
+  }
+
+  .p-h h2 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #bd945f;
+  }
+
+  .p-h p {
+    font-size: 10px;
+    color: #000000;
+    line-height: 1.4;
+    font-family: "Gotham-Thin";
+    text-align: justify;
+  }
+
+  /* Nút "Xem thêm" */
+  .more {
+    font-size: 1rem;
+    text-align: left;
+    border: none;
+    background-color: #fff;
+    color: #bd945f;
+    text-transform: uppercase;
+    margin-left: 8rem;
+  }
+  .category-item {
+      display: flex;
+      justify-content: center; /* Căn giữa các phần tử */
+      flex-wrap: wrap; /* Cho phép phần tử xuống dòng */
+      text-align: center;
+      width: 100%;
+      margin-bottom: 70px;
+      gap: 1rem; /* Khoảng cách giữa các phần tử */
+      padding: 0 1rem; /* Thêm padding để cách đều hai bên 1rem */
+    }
+    
+    .category-item > div {
+      flex: 0 0 calc(25% - 1rem); /* Mỗi phần tử chiếm 25% chiều rộng, trừ khoảng cách */
+      box-sizing: border-box;
+    }
+    
+  .fa-arrow-right {
+    transform: scale(1); /* Điều chỉnh lại kích thước icon mũi tên */
+  }
+  /* Phần cuối trang */
+  .end-section {
+    width: 100%;
+    background-image: url(./AnhCatTC/lienhe-bg.jpg);
+    display: flex;
+    flex-direction: column;
+    padding: 30px 15px;
+    align-items: center;
+  }
+
+  .img-ghe {
+    width: 200px; /* Giảm kích thước hình ảnh */
+    margin-bottom: 20px;
+    transform: translateX(-60%);
+  }
+
+  .end-section > p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      color: #fff;
+      position: relative;
+      transform: translate(100px, -200px); /* Kết hợp cả translateX và translateY */
+  }
+    .end-section p.active::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 25%;
+      transform: translateX(-50%);
+      height: 8px;
+      width: 100px;
+      background-color: #ffffff;
+      display: block;
+  }
+  .end-section > p span{
+      font-size: 1.1rem;
+      font-weight: bold;
+  }
+  .u-contact {
+    width: 100%; /* Chiều rộng full cho phần form liên hệ */
+    transform: translateY(-50px);
+  }
+  .u-contact label {
+    color: #fff;
+    font-size: 13px;
+  }
+
+  .u-contact input {
+    width: 100%; /* Full chiều rộng cho input */
+    height: 50px; /* Giảm chiều cao input */
+    margin-bottom: 10px;
+    border: none;
+    padding: 10px;
+  }
+
+  .u-contact-bt {
+    width: 100px;
+    height: 45px;
+    padding: 0 20px; /* Thêm padding để tạo khoảng cách bên trong */
+    background-color: #fff;
+    border: none;
+    display: block;
+  }
+  #second h3::after{
+      content: '';
+  position: absolute;
+  top: 100%;
+  transform: translateX(-50%);
+  left: 50%;
+  height: 8px;
+  width: 140px;
+  background-color: #bd945f;
+  display: block;
+  }
+  
+#third>.firsth::after{
+  content: '';
+  position: absolute;
+  top: 100%;
+  transform: translateX(-50%);
+  left: 50%;
+  height: 8px;
+  width: 140px;
+  background-color: #bd945f;
+  display: block;
+}
+#third>.secondh:after{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 8px;
+  width: 140px;
+  background-color: #bd945f;
+  display: block;
+}
+
+#banner-cuoi>.firsth::after{
+  content: '';
+  position: absolute;
+  top: 100%;
+  transform: translateX(-50%);
+  left: 50%;
+  height: 8px;
+  width: 140px;
+  background-color: #bd945f;
+  display: block;
+}
+#banner-cuoi>.secondh::after{
+  content: '';
+  position: absolute;
+  top: 100%;
+  transform: translateX(-50%);
+  left: 50%;
+  height: 8px;
+  width: 140px;
+  background-color: #bd945f;
+  display: block;
+}
+
+header .menu ul li:hover>a::after,
+header .menu ul li>a.active::after {
+  display: block;
+}
+
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  /* Banner trang chủ */
+  #first {
+    background-image: url(./AnhCatTC/banner.png);
+    height: 40rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  #first .container {
+    position: relative;
+  }
+
+  #first .banner-content {
+    position: absolute;
+    top: 7.25rem;
+    left: 3.25rem;
+  }
+
+  #first h3,
+  #first h3 > span {
+    font-family: Gotham-Ultra;
+    font-size: 2.875rem;
+    text-transform: uppercase;
+  }
+  #first p {
+    width: 35rem;
+    text-align: justify;
+  }
+
+  #first .btn-banner {
+    background-color: #bd945f;
+    padding: 1.25rem 2rem;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-family: Gotham-Ultra;
+    color: #fff;
+  }
+  /* //Giữa */
+  #second {
+    height: auto;
+    background-color: whitesmoke;
+    position: relative;
+  }
+  #second .container {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center;
+    height: 30rem;
+    padding-top: 2rem;
+    text-align: center;
+    transform: translateY(-20%);
+  }
+  .category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category img {
+    width: 120px;
+    height: 120px;
+  }
+  .category p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+    font-family: "Gotham-Ultra";
+  }
+  /* Làm lại CSS từ đây */
+  #second h3 {
+    text-transform: uppercase;
+    font-family: "Gotham-Ultra";
+    margin-top: 15px;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+  }
+  .container-product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Chia thành 2 cột */
+    grid-template-rows: repeat(2, auto); /* Chia thành 2 hàng */
+    gap: 20px; /* Khoảng cách giữa các sản phẩm */
+    width: 100%;
+    max-width: 600px; /* Giới hạn chiều rộng danh sách sản phẩm */
+  }
+
+  .product-card {
+    width: 100%; /* Chiều rộng sản phẩm tự động chiếm hết ô */
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+
+  .product-image img {
+    width: 100%; /* Hình ảnh sản phẩm chiếm hết ô */
+    height: auto; /* Đặt chiều cao tự động để giữ tỉ lệ */
+  }
+
+  .product-info {
+    padding: 10px;
+  }
+
+  .product-info h4 {
+    font-size: 14px; /* Kích thước chữ nhỏ */
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .rating {
+    font-size: 16px; /* Kích thước đánh giá sao nhỏ */
+    height: 25px;
+    color: #ffd700;
+  }
+
+  .product-info p {
+    font-size: 13px; /* Mô tả sản phẩm nhỏ */
+    color: #555;
+    margin: 0;
+  }
+
+  .price {
+    color: black !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    margin: 0 !important;
+}
+
+
+  /* Nút điều hướng prev và next */
+  .next,
+  .prev {
+    width: 40px;
+    height: 40px;
+    font-size: 20px; /* Kích thước biểu tượng mũi tên */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bd945f;
+    border-radius: 50%; /* Bo tròn nút */
+    color: white;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .prev {
+    left: 10px; /* Đặt nút prev gần danh sách sản phẩm hơn */
+  }
+
+  .next {
+    right: 10px; /* Đặt nút next gần danh sách sản phẩm hơn */
+  }
+  /* //gan cuoi */
+  #third {
+    padding: 40px 20px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./AnhCatTC/back-anh.jpg);
+    position: relative;
+    z-index: -2;
+  }
+  .p3 span{
+      text-transform: uppercase;
+  }
+  #third h3 {
+    font-size: 1.8rem; /* Giảm kích thước tiêu đề */
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Gotham-Ultra';
+  }
+
+  #third .firsth {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+
+  #third .about {
+    flex-direction: column; /* Chuyển các phần tử thành cột */
+    align-items: center; /* Căn giữa các phần tử */
+    width: 90%; /* Đảm bảo nội dung không tràn ra ngoài màn hình */
+    margin: 0 auto;
+  }
+
+  .about-img {
+    width: 100%; /* Chiếm toàn bộ chiều rộng màn hình */
+    margin-bottom: 20px;
+  }
+
+  .about-img img {
+    width: 100%; /* Hình ảnh tự động căn chỉnh theo chiều rộng */
+    height: auto;
+  }
+
+  .content-p {
+    width: 100%;
+  }
+
+  .content-p > p {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+
+  .p1,
+  .p2 {
+    font-size: 1.5rem; /* Kích thước tiêu đề nhỏ hơn */
+    text-transform: uppercase;
+  }
+
+  .p3,
+  .p4 {
+    font-size: 1rem; /* Giảm kích thước đoạn văn */
+    margin-bottom: 10px;
+  }
+
+  /* Hình ảnh nhỏ ở cuối */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Chia thành 4 cột */
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .p-img {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .p-img img {
+    width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng */
+    height: auto;
+  }
+
+  .p-img:last-child::after {
+    content: "Xem thêm >";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    z-index: 2;
+  }
+
+  #third .secondh {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+
+  .content-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cột cho các box */
+    row-gap: 30px;
+    column-gap: 30px;
+    width: 90%; /* Đảm bảo nội dung chiếm 90% chiều rộng màn hình */
+    margin: auto;
+    margin-bottom: 40px;
+  }
+
+  .content-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    height: auto;
+  }
+
+  .content-item img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .text-img {
+    text-align: center;
+  }
+
+  .text-img h2 {
+    font-size: 1.4rem;
+    color: #bd945f;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+  }
+
+  .text-img p {
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+  #banner-cuoi {
+    height: auto;
+    background-color: #fff;
+    position: relative;
+  }
+
+  #banner-cuoi .firsth,
+  #banner-cuoi .secondh {
+    position: relative;
+    text-transform: uppercase;
+    font-family: "Gotham-Ultra";
+    color: #2c2e53;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+
+  #banner-cuoi .about {
+    display: flex;
+    flex-direction: column; /* Thay đổi thành cột để nội dung không tràn */
+    width: 90%;
+    margin: 0 auto;
+
+  }
+
+  .item-img-p {
+    background-image: url(./AnhCatTC/tin-tuc/tintuc-1.jpg);
+    position: relative;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px; /* Thêm khoảng cách giữa các phần */
+    height: 700px;
+  }
+
+  .item-img-p img {
+    width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng */
+    height: auto;
+  }
+
+  .item-p {
+    position: absolute;
+    width: 100%;
+    background-color: #bd945f;
+    padding: 15px;
+    bottom: 0;
+    box-sizing: border-box;
+  }
+
+  .item-p h2 {
+    font-size: 2rem;
+    width: 100%;
+    margin-left: 0;
+    color: #fff;
+  }
+
+  .item-p p {
+    font-size: 1rem;
+    margin-left: 0;
+    width: 100%;
+    text-align: justify;
+    font-family: 'Gotham-Thin';
+  }
+
+  .item-p-img-p {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .p-img-p {
+    display: flex;
+    align-items: flex-start; /* Căn chỉnh hình ảnh lên đầu văn bản */
+    gap: 10px; /* Khoảng cách giữa hình ảnh và phần văn bản */
+    width: 100%;
+  }
+  .p-img-p img{
+      width: 200px;
+      margin-top: 0;
+      margin: auto;
+      margin-right: 20px;
+      
+  }
+  
+
+  .p-h {
+    margin-left: 0;
+  }
+
+  .p-h h2 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    text-align: justify;
+    color: #bd945f;
+  }
+
+  .p-h p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Gotham-Thin';
+  }
+  .more{
+    font-size: 1rem;
+    text-align: left;
+    border: none;
+    background-color: #fff;
+    color: #bd945f;
+    text-transform: uppercase;
+  }
+  #banner-cuoi .secondh {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+
+  .category-item {
+      display: flex;
+      justify-content: center; /* Căn giữa các phần tử */
+      flex-wrap: wrap; /* Cho phép phần tử xuống dòng */
+      text-align: center;
+      width: 100%;
+      margin-bottom: 70px;
+      gap: 1rem; /* Khoảng cách giữa các phần tử */
+      padding: 0 1rem; /* Thêm padding để cách đều hai bên 1rem */
+    }
+    
+    .category-item > div {
+      flex: 0 0 calc(25% - 1rem); /* Mỗi phần tử chiếm 25% chiều rộng, trừ khoảng cách */
+      box-sizing: border-box;
+    }
+    
+  
+
+  .category-item img {
+    width: 140px;
+    margin-bottom: 20px;
+  }
+
+  .end-section {
+    width: 100%;
+    background-image: url(./AnhCatTC/lienhe-bg.jpg);
+    height: auto;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .img-ghe {
+    position: relative;
+    width: 250px;
+    margin-bottom: 30px;
+    height: auto;
+    transform: translate(-50px, -50px);
+  }
+
+  .end-section > p {
+    color: #fff;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    width: 30%;
+    transform: translateY(-30px);
+  }
+
+  .end-section p span {
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .u-contact {
+      width: 80%;
+      margin: 0 auto;
+      text-align: left; /* Căn trái cho tất cả các phần tử bên trong */
+      margin-bottom: 40px;
+    }
+    
+    .u-contact-lb {
+      font-size: 14px;
+      color: #fff;
+      width: 100%;
+    }
+    
+    .u-contact input {
+      width: 90%;
+      height: 50px;
+      padding-left: 10px;
+      margin-bottom: 10px;
+      text-align: left;
+      border: none;
+    }
+    
+    .u-contact-bt {
+      height: 50px;
+      width: 100px;
+      background-color: #fff;
+      margin-left: 0; /* Đảm bảo button sát lề trái */
+      border: none;
+    }
+    
+  #third>.firsth::after{
+      content: '';
+      position: absolute;
+      top: 100%;
+      transform: translateX(-50%);
+      left: 50%;
+      height: 8px;
+      width: 140px;
+      background-color: #bd945f;
+      display: block;
+  }
+  #third>.secondh:after{
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 8px;
+      width: 140px;
+      background-color: #bd945f;
+      display: block;
+  }
+  
+  #banner-cuoi>.firsth::after{
+      content: '';
+      position: absolute;
+      top: 100%;
+      transform: translateX(-50%);
+      left: 50%;
+      height: 8px;
+      width: 140px;
+      background-color: #bd945f;
+      display: block;
+  }
+  #banner-cuoi>.secondh::after{
+      content: '';
+      position: absolute;
+      top: 100%;
+      transform: translateX(-50%);
+      left: 50%;
+      height: 8px;
+      width: 140px;
+      background-color: #bd945f;
+      display: block;
+  }
+  
+  header .menu ul li:hover>a::after,
+  header .menu ul li>a.active::after {
+      display: block;
+  }
+  #second h3::after{
+      content: '';
+  position: absolute;
+  top: 100%;
+  transform: translateX(-50%);
+  left: 50%;
+  height: 8px;
+  width: 140px;
+  background-color: #bd945f;
+  display: block;
+  }
+  #third::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: -1;
+  }
+  .end-section p.active::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 35%;
+      transform: translateX(-50%);
+      height: 8px;
+      width: 100px;
+      background-color: #ffffff;
+      display: block;
+    }
+}

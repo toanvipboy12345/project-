@@ -1,0 +1,477 @@
+@media (min-width: 1201px) {
+    #banner {
+        background-image: url('./AnhCat/gioi-thieu/GIOITHIEU.jpg'); /* Sử dụng ảnh placeholder */
+        background-size: 100% auto; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        height: 467px; 
+        opacity: 1;
+    }
+    
+    .logo-banner h2 {
+        color: #fff;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .logo-banner {
+        position: relative;
+        top: -2.5rem;
+    }
+    
+    #main {
+        background-color: whitesmoke;
+        padding: 4rem 16rem;
+    }
+    
+    /* Căn chỉnh cho nội dung chính */
+    .content {
+        background-color: #fff;
+        padding: 4rem 6rem;
+        margin-top: -10rem;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Căn chỉnh tiêu đề cho các phần */
+    .section-title {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #2e3e66;
+        text-align: center;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+        position: relative;
+    }
+    
+    .section-title::after {
+        content: '';    
+        display: block;
+        width: 8rem;
+        height: 0.5rem;
+        background-color: #bd945f;
+        margin: 0.5rem auto 0;
+    }
+    
+    /* Căn chỉnh cho nội dung bên trong từng section */
+    .section-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 2rem;
+    }
+    
+    /* Style cho hình ảnh */
+    .content-image {
+        width: 50%;
+        margin-right: 2rem;
+        padding: 0.25rem;
+    }
+    
+    /* Style cho phần văn bản */
+    .text-container {
+        width: 50%;
+    }
+    .section-block{
+        margin-top: 3.5rem;
+    }
+    .section-block h2{
+        font-family: 'Gotham-Ultra';
+    }
+    .section-text {
+        font-size: 1.1rem;
+        color: #333;
+        line-height: 1.8;
+        text-align: justify;
+    }
+    /* Tầm nhìn */
+    /* Style cho Tầm Nhìn */
+    .vision-block {
+        display: flex;
+        flex-direction: column; /* Thay đổi thành cột để ảnh nằm trên và văn bản nằm dưới */
+        align-items: center; /* Căn giữa cả hình ảnh và văn bản */
+        text-align: center; /* Văn bản cũng căn giữa */
+        padding: 1rem;
+    }
+    
+    .vision-image {
+        width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều ngang của container */
+        height: auto;
+        margin-bottom: 2rem; /* Tạo khoảng cách giữa ảnh và đoạn văn bản */
+    }
+    
+    .vision-block .section-text {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        text-align: center; /* Căn giữa văn bản */
+        font-family: 'Gotham-Medium';
+        color: #333; /* Màu văn bản đậm */
+        width: 90%;
+    }
+    
+    
+    /* Phần Sứ Mệnh */
+    /* Sứ mệnh */
+    .mission-blocks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .mission-row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    
+    .mission-block {
+        display: flex;
+        align-items: center;
+        border: 2px solid #bd945f;
+        padding: 1.5rem;
+        margin: 0.5rem;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 48%; /* Để mỗi khối chiếm 48% chiều rộng của row */
+    }
+    
+    .mission-icon {
+        flex-shrink: 0;
+        margin-right: 1rem;
+    }
+    
+    .mission-text {
+        text-align: left;
+        font-family: 'Gotham-Medium';
+    }
+    
+    .mission-text h3 {
+        font-size: 1.25rem;
+        color: #bd945f;
+        margin-bottom: 0.5rem;
+    }
+    
+    .mission-text p {
+        font-size: 1rem;
+        color: #555;
+        line-height: 1.6;
+    }
+    
+    /* Căn chỉnh nội dung */
+    .mission-blocks .mission-row .mission-block {
+        margin: 0 1rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #2e3e66;
+        text-align: center;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+        position: relative;
+    }
+    
+    .section-title::after {
+        content: '';
+        display: block;
+        width: 10rem;
+        height: 0.5rem;
+        background-color: #bd945f;
+        margin: 0.5rem auto 0;
+    }
+}
+@media (max-width: 767px) {
+    #banner {
+        background-image: url('./AnhCat/gioi-thieu/GIOITHIEU.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 2rem;
+    }
+    
+    .logo-banner h2 {
+        color: #fff;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    
+    .logo-banner {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .logo-banner img {
+        max-width: 70%; /* Đảm bảo logo không vượt quá kích thước container */
+        height: auto; /* Giữ tỷ lệ logo */
+    }
+    #main {
+        background-color: whitesmoke;
+        padding: 1rem;
+    }
+
+    .content {
+        background-color: #fff;
+        padding: 1.5rem;
+        margin-top: 0;
+        box-shadow: none;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .section-title::after {
+        width: 5rem;
+        height: 0.25rem;
+        margin-top: 0.25rem;
+    }
+
+    .section-inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-image {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .text-container {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .section-block h2 {
+        font-size: 1.4rem;
+    }
+
+    .section-text {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    /* Vision block - Tầm nhìn */
+    .vision-block {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .vision-image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .vision-block .section-text {
+        font-size: 1rem;
+        line-height: 1.5;
+        width: 100%;
+    }
+
+    /* Mission block - Sứ mệnh */
+    .mission-block {
+        width: 100%;
+        display: flex;
+        flex-direction: column; /* Sắp xếp icon và text theo cột trên màn hình nhỏ */
+        align-items: center; /* Căn giữa nội dung theo chiều ngang */
+        margin-bottom: 2rem; /* Tăng khoảng cách giữa các khối sứ mệnh */
+        text-align: center; /* Căn giữa text để giao diện đẹp hơn trên mobile */
+        border: 2px solid #bd945f;
+    }
+
+    .mission-icon {
+        margin-bottom: 1rem; /* Tạo khoảng cách giữa icon và văn bản */
+        width: 60px; /* Tăng kích thước icon để dễ nhìn hơn trên màn hình nhỏ */
+        height: 60px; /* Đảm bảo kích thước icon đồng nhất */
+    }
+
+    .mission-text {
+        flex-grow: 1;
+        text-align: center; /* Căn giữa văn bản để dễ đọc hơn trên mobile */
+    }
+
+    .mission-text h3 {
+        font-size: 1.4rem; /* Tăng kích thước tiêu đề để dễ đọc hơn */
+        margin-bottom: 0.8rem; /* Tăng khoảng cách giữa tiêu đề và đoạn văn */
+    }
+
+    .mission-text p {
+        font-size: 1rem; /* Giữ kích thước đoạn văn hợp lý cho màn hình nhỏ */
+        line-height: 1.6; /* Đảm bảo khoảng cách giữa các dòng hợp lý */
+        padding: 0 1rem; /* Thêm padding ngang để tránh text chạm vào cạnh */
+    }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+    #banner {
+        background-image: url('./AnhCat/gioi-thieu/GIOITHIEU.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px; /* Chiều cao banner thoải mái hơn */
+        padding: 1.5rem;
+    }
+
+    .logo-banner h2 {
+        color: #fff;
+        text-align: center;
+        font-weight: bold;
+        font-size: 2.5rem; /* Tăng kích thước tiêu đề cho nổi bật */
+    }
+
+    .logo-banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Căn giữa theo chiều ngang */
+        align-items: center; /* Căn giữa theo chiều dọc */
+        height: 100%; /* Đảm bảo chiều cao của phần logo-banner đủ để căn giữa */
+        position: relative; /* Giữ nguyên vị trí */
+        margin-top: -4rem;
+    }
+    
+    .logo-banner img {
+        max-width: 100%; /* Đảm bảo logo không vượt quá kích thước container */
+        height: auto; /* Giữ tỷ lệ logo */
+    }
+
+    #main {
+        background-color: whitesmoke;
+        padding: 3rem 6rem; /* Điều chỉnh padding cho phù hợp với màn hình vừa */
+    }
+
+    .content {
+        background-color: #fff;
+        padding: 3rem 4rem; 
+        margin-top: -7rem;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Giữ shadow nhẹ cho nội dung */
+
+    }
+
+    .section-title {
+        font-size: 2rem; /* Làm nổi bật tiêu đề */
+        margin-bottom: 2rem;
+        text-transform: uppercase; /* Viết hoa toàn bộ tiêu đề để tăng tính thẩm mỹ */
+        text-align: center; /* Căn giữa tiêu đề */
+    }
+
+    .section-title::after {
+        content: '';
+        display: block;
+        width: 7rem;
+        height: 0.4rem;
+        background-color: #bd945f; /* Màu nhấn mạnh cho tiêu đề */
+        margin: 1rem auto 0; /* Canh đều phía dưới tiêu đề */
+    }
+
+    /* Thành lập và phát triển - Hình ảnh trên, văn bản dưới */
+    .section-inner {
+        display: flex;
+        flex-direction: column; /* Sắp xếp hình ảnh phía trên và văn bản phía dưới */
+        align-items: center; /* Căn giữa nội dung */
+        margin-bottom: 2rem;
+    }
+
+    .content-image {
+        width: 100%;
+        height: auto;
+        border-radius: 8px; /* Bo góc cho hình ảnh */
+        margin-bottom: 1.5rem; /* Tạo khoảng cách giữa ảnh và văn bản */
+    }
+
+    .text-container {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .section-block {
+        margin-top: 3rem; /* Tạo khoảng cách giữa các phần */
+    }
+
+    .section-text {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #333;
+    }
+
+    /* Vision block - Tầm nhìn */
+    .vision-block {
+        display: flex;
+        flex-direction: column; /* Sắp xếp hình ảnh phía trên và văn bản phía dưới */
+        align-items: center; /* Căn giữa nội dung */
+        text-align: justify;
+        margin-bottom: 2rem;
+    }
+
+    .vision-image {
+        width: 100%;
+        height: auto;
+        border-radius: 8px; /* Bo góc cho hình ảnh */
+        margin-bottom: 1.5rem; /* Tạo khoảng cách giữa ảnh và văn bản */
+    }
+
+    .vision-block .section-text {
+        font-size: 1.2rem;
+        line-height: 1.7;
+        text-align: justify;
+        width: 100%;
+    }
+
+    /* Mission block - Sứ mệnh */
+    .mission-blocks {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Sắp xếp các khối sứ mệnh thành lưới */
+        grid-gap: 2rem; /* Tạo khoảng cách giữa các khối */
+    }
+
+    .mission-row {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .mission-block {
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column; /* Sắp xếp theo cột */
+        align-items: center;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ cho các khối */
+    }
+
+    .mission-icon {
+        width: 60px; /* Kích thước icon lớn hơn */
+        height: 60px;
+        margin-bottom: 1rem;
+    }
+
+    .mission-text h3 {
+        font-size: 1.5rem;
+        color: #bd945f;
+        margin-bottom: 1rem;
+    }
+
+    .mission-text p {
+        font-size: 1.1rem;
+        color: #555;
+        line-height: 1.6;
+    }
+}
+
+
+

@@ -1,0 +1,511 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@media (min-width: 1201px) {
+  #banner {
+    background-image: url("AnhCat/san-pham/XEMTATCA_SANPHAM.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 540px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 2rem;
+  }
+  
+  .banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 80%; /* Điều chỉnh lại để phần nội dung có thêm không gian */
+    margin-left: auto;
+  }
+  
+  .text-content {
+    transform: translateX(-22.5rem); /* Thay thế margin-left bằng transform */
+  }
+  
+  .text-content h1 {
+    font-size: 3rem;
+    color: #2e3e66;
+    font-family: 'Gotham-Light', sans-serif;
+    line-height: 1.2;
+    white-space: nowrap; /* Đảm bảo chữ không bị xuống dòng */
+  }
+  
+  /* Style for handwritten text */
+  .text-content h1 .handwriting {
+    font-family: 'Satisfy', cursive;
+    font-size: 4rem;
+    color: #bd945f;
+  }
+  
+  .banner-btn {
+    display: inline-block;
+    background-color: white;
+    color: #2e3e66;
+    padding: 0.75rem 2rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+  }
+  
+  .banner-btn:hover {
+    background-color: #bd945f;
+    color: white;
+  }
+  
+  /* Nút "prev" và "next" nằm ở hai phía của banner */
+  .prev-btn, .next-btn {
+    cursor: pointer;
+    font-size: 2rem;
+    color: #2e3e66;
+    background: rgba(255, 255, 255, 0.8);
+    width: 3rem; 
+    height: 3rem; 
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Định vị các nút prev/next và tăng khoảng cách từ lề */
+  .prev-btn {
+    position: absolute;
+    left: 16rem; /* Tăng khoảng cách từ lề trái hơn nữa */
+  }
+  
+  .next-btn {
+    position: absolute;
+    right: 16rem; /* Tăng khoảng cách từ lề phải hơn nữa */
+  }
+  
+  .prev-btn:hover, .next-btn:hover {
+    background: #bd945f;
+    color: white;
+  }
+  
+  
+    #main {
+      background-color: whitesmoke;
+      padding: 4.5rem 18rem;
+    }
+    .content {
+      display: flex;
+      flex-direction: column; /* Stack the child divs vertically */
+      padding: 0;
+    }
+    .content {
+      padding: 2rem;
+    }
+    
+    .category-section {
+      margin-bottom: 2rem;
+      background-color: #fff;
+      padding: 2rem;
+    }
+    
+    .category-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    
+    .category-header h2 {
+      font-size: 1.5rem;
+      color: #2e3e66;
+      text-transform: uppercase;
+      font-family: 'Gotham-Ultra';
+    }
+    .category-header h2::after {
+      content: ""; 
+      display: block;
+      width: 8rem; 
+      height: 0.5rem; 
+      background-color: #bd945f;
+  }
+  
+    
+    .category-header .view-all {
+      text-decoration: none;
+      font-size: 1rem;
+      color: #383a5d;
+      text-transform: uppercase;
+      font-family: 'Gotham-Medium';
+    }
+    
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+    
+    .product-card {
+      background-color: #fff;
+      text-align: center;
+      padding: 1rem;
+      transition: transform 0.3s ease;
+    }
+    
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .product-card img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 0.5rem;
+    }
+    
+    .product-card h3 {
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      color: #2e3e66;
+      margin-bottom: 0.5rem;
+      font-family: 'Gotham-Ultra';
+    }
+    
+    .product-card p {
+      margin: 0.25rem 0;
+      font-size: 1.5rem;
+      color: #bd945f;
+    }
+    
+    .product-card .price {
+      font-size: 1.2rem !important; /* Sử dụng !important để đảm bảo CSS được áp dụng */
+      margin: 0.2rem 0; /* Giảm khoảng cách cho thẻ p chứa giá */
+      color: #000000;
+    }
+    
+    .product-card .size {
+      font-size: 0.7rem !important; /* Sử dụng !important để đảm bảo CSS được áp dụng */
+      color: #626a67 !important;
+      margin: 0.2rem 0; /* Giảm khoảng cách cho thẻ p chứa kích thước */
+    }
+    
+}
+@media (max-width: 767px) {
+  #banner {
+    background-image: url("AnhCat/san-pham/XEMTATCA_SANPHAM.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    position: relative; /* Để định vị các nút prev và next */
+  }
+
+  .banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .prev-btn, .next-btn {
+    font-size: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%; /* Căn giữa theo chiều dọc */
+    transform: translateY(-50%); /* Căn chỉnh chính xác ở giữa */
+  }
+
+  /* Nút prev nằm bên trái */
+  .prev-btn {
+    left: 0; /* Sát lề trái */
+    margin-left: 0.5rem; /* Đặt khoảng cách từ lề trái */
+  }
+
+  /* Nút next nằm bên phải */
+  .next-btn {
+    right: 0; /* Sát lề phải */
+    margin-right: 0.5rem; /* Đặt khoảng cách từ lề phải */
+  }
+
+  .prev-btn:hover, .next-btn:hover {
+    background-color: #bd945f;
+    color: white;
+  }
+  
+  .text-content {
+    transform: none; /* Loại bỏ transform */
+    margin: 0;
+  }
+  
+  .text-content h1 {
+    font-size: 1.8rem; /* Giảm kích thước tiêu đề */
+    color: #2e3e66;
+    font-family: 'Gotham-Light', sans-serif;
+    line-height: 1.2;
+    white-space: nowrap; /* Đảm bảo chữ không bị xuống dòng */
+    white-space: normal; /* Cho phép xuống dòng trên màn hình nhỏ */
+  }
+  
+  .text-content h1 .handwriting {
+    font-family: 'Satisfy', cursive;
+    font-size: 2.5rem;
+    color: #bd945f;
+  }
+  
+  .banner-btn {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+    display: inline-block;
+    background-color: #bd945f;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+
+
+  #main {
+    padding: 2rem 1rem;
+  }
+  
+  .category-section {
+    padding: 1rem; /* Giảm padding cho các danh mục */
+  }
+  
+  .category-header h2 {
+    font-size: 1.2rem;
+    font-family: 'Gotham-Ultra';
+    color: #2e3e66;
+  }
+  .category-header h2::after {
+    content: ""; 
+    display: block;
+    width: 5rem; 
+    height: 0.3rem; 
+    background-color: #bd945f;
+}
+  
+  .category-header .view-all {
+    font-size: 0.9rem; /* Giảm kích thước nút "Xem Tất Cả" */
+  }
+  .category-header a{
+    color: #383a5d;
+    text-transform: uppercase;
+  }
+  
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 sản phẩm trên mỗi hàng */
+    gap: 1rem;
+  }
+  
+  .product-card {
+    background-color: #fff;
+    text-align: center;
+    padding: 0.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+  
+  .product-card h3 {
+    text-transform: uppercase;
+    font-size: 1rem; /* Giảm kích thước tên sản phẩm */
+    color: #2e3e66;
+    margin-bottom: 0.2rem; /* Giảm khoảng cách dưới của h3 */
+    font-family: 'Gotham-Ultra';
+  }
+  
+  .product-card p {
+    color: #bd945f;
+    font-size: 1.5rem;
+    margin: 0.2rem 0; /* Giảm khoảng cách trên và dưới của tất cả thẻ p */
+  }
+  
+  .product-card .price {
+    font-size: 1.2rem !important; /* Sử dụng !important để đảm bảo CSS được áp dụng */
+    margin: 0.2rem 0; /* Giảm khoảng cách cho thẻ p chứa giá */
+    color: #000000;
+  }
+  
+  .product-card .size {
+    font-size: 0.7rem !important; /* Sử dụng !important để đảm bảo CSS được áp dụng */
+    color: #626a67 !important;
+    margin: 0.2rem 0; /* Giảm khoảng cách cho thẻ p chứa kích thước */
+  } 
+  
+  
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  /* Banner section */
+  #banner {
+    background-image: url("AnhCat/san-pham/XEMTATCA_SANPHAM.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px; /* Giảm chiều cao banner cho màn hình trung bình */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5rem;
+    position: relative;
+  }
+
+  .banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .text-content h1 {
+    font-size: 2.5rem; /* Kích thước tiêu đề cho màn hình trung bình */
+    color: #2e3e66;
+    font-family: 'Gotham-Light', sans-serif;
+    line-height: 1.2;
+    white-space: normal; /* Cho phép tiêu đề xuống dòng */
+  }
+
+  .text-content h1 .handwriting {
+    font-family: 'Satisfy', cursive;
+    font-size: 3.5rem; /* Giảm kích thước chữ viết tay */
+    color: #bd945f;
+  }
+
+  .banner-btn {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    display: inline-block;
+    background-color: #bd945f;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+
+  .prev-btn, .next-btn {
+    font-size: 1.75rem;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .prev-btn {
+    left: 1rem; /* Điều chỉnh vị trí cho màn hình trung bình */
+  }
+
+  .next-btn {
+    right: 1rem; /* Điều chỉnh vị trí cho màn hình trung bình */
+  }
+
+  .prev-btn:hover, .next-btn:hover {
+    background-color: #bd945f;
+    color: white;
+  }
+
+  /* Main section */
+  #main {
+    padding: 3rem 8rem; /* Giảm padding cho phần chính */
+  }
+
+  .category-section {
+    padding: 1.5rem; /* Giảm padding cho các danh mục */
+  }
+
+  .category-header h2 {
+    font-size: 1.4rem; /* Điều chỉnh kích thước tiêu đề */
+    font-family: 'Gotham-Ultra';
+    color: #2e3e66;
+  }
+
+  .category-header h2::after {
+    content: ""; 
+    display: block;
+    width: 6rem; /* Điều chỉnh chiều dài vạch dưới tiêu đề */
+    height: 0.4rem;
+    background-color: #bd945f;
+  }
+
+  .category-header .view-all {
+    font-size: 1rem;
+  }
+
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 sản phẩm trên mỗi hàng */
+    gap: 1.25rem;
+  }
+
+  .product-card {
+    background-color: #fff;
+    text-align: center;
+    padding: 0.75rem;
+    transition: transform 0.3s ease;
+  }
+
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.75rem;
+  }
+
+  .product-card h3 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #2e3e66;
+    margin-bottom: 0.4rem;
+    font-family: 'Gotham-Ultra';
+  }
+
+  .product-card p {
+    color: #bd945f;
+    font-size: 1.4rem; /* Giảm kích thước font cho màn hình trung bình */
+    margin: 0.25rem 0;
+  }
+
+  .product-card .price {
+    font-size: 1.1rem !important; /* Điều chỉnh kích thước giá */
+    margin: 0.2rem 0;
+    color: #000000;
+  }
+
+  .product-card .size {
+    font-size: 0.8rem !important; /* Điều chỉnh kích thước cho thẻ kích thước */
+    color: #626a67 !important;
+    margin: 0.25rem 0;
+  }
+}

@@ -1,0 +1,212 @@
+@media (min-width: 1201px) {
+    #banner {
+        background-image: url('./AnhCat/doi-tac/banner.jpg');
+        background-size: 100% auto; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        height: 467px; 
+        opacity: 1;
+    }
+    
+    .logo-banner h2 {
+        color: #fff;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .logo-banner {
+        position: relative;
+        top: -2.5rem;
+    }
+    #main {
+        background-color: whitesmoke;
+        padding: 4rem 20rem;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        padding: 3rem;
+        margin-top: -9.5rem;
+    }
+    
+    .partner {
+        display: flex;
+        justify-content: flex-start; /
+        align-items: flex-start; 
+        margin-bottom: 2rem;
+    }
+    
+    .partner img {
+        width: 12.25rem;
+        height: auto; 
+        object-fit: cover; 
+        margin-right: 1rem; 
+    }
+    
+    .infor {
+        padding: 1.5rem; 
+        text-align: justify;
+    }
+    .infor>h2>a{
+        color: #bd945f;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-family: 'Gotham-Ultra';
+        font-size: 1.5rem;
+    }
+        
+}
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    #banner {
+        background-image: url('./AnhCat/doi-tac/banner.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px; /* Điều chỉnh chiều cao cho phù hợp với màn hình trung bình */
+        padding: 2rem;
+    }
+    
+    .logo-banner h2 {
+        color: #fff;
+        text-align: center;
+        font-weight: bold;
+        font-size: 2rem; /* Giữ kích thước tiêu đề vừa phải */
+    }
+    
+    .logo-banner {
+        position: relative;
+        top: 0;
+    }
+
+    #main {
+        background-color: whitesmoke;
+        padding: 3rem 5rem; 
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        padding: 2rem; 
+        margin-top: -5rem; 
+    }
+    .partner {
+        display: flex;
+        justify-content: flex-start; 
+        align-items: center; 
+        margin-bottom: 2rem;
+    }
+    
+    .partner img {
+        width: 30%;
+        max-width: 250px;
+        height: auto;
+        margin-right: 2rem;
+        object-fit: contain;
+        position: relative; 
+        top: -80px; 
+    }
+    
+    .infor {
+        padding: 1rem;
+        text-align: justify;
+        width: 80%; 
+    }
+    
+    .infor > h2 > a {
+        color: #bd945f;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-family: 'Gotham-Ultra';
+        font-size: 1.8rem; 
+    }
+
+    .infor p {
+        font-size: 1rem; 
+        line-height: 1.5;
+    }
+}
+
+
+@media (max-width: 767px) {
+    #banner {
+        background-image: url('./AnhCat/doi-tac/banner.jpg');
+        background-size: cover; /* Đảm bảo ảnh nền phủ đầy đủ */
+        background-position: center; 
+        background-repeat: no-repeat; 
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        height: auto; /* Để chiều cao tự động cho phù hợp với màn hình nhỏ */
+        padding: 2rem 1rem; /* Giảm padding để phù hợp với màn hình nhỏ */
+    }
+    
+    .logo-banner h2 {
+        color: #fff;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.5rem; /* Giảm kích thước font cho phù hợp */
+    }
+    
+    .logo-banner {
+        position: relative;
+        top: 0; /* Đặt lại top cho phù hợp với màn hình nhỏ */
+    }
+    
+    #main {
+        background-color: whitesmoke;
+        padding: 1rem; /* Giảm padding để phù hợp với kích thước nhỏ hơn */
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        padding: 1rem;
+        margin-top: 0;
+    }
+    
+    .partner {
+        display: flex;
+        flex-direction: column; /* Đổi thành dạng cột để dễ hiển thị trên màn hình nhỏ */
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+    
+    .partner img {
+        width: 80%; /* Giảm kích thước của ảnh xuống 80% chiều rộng của phần tử cha */
+        max-width: 200px; /* Giới hạn kích thước tối đa của ảnh */
+        height: auto;
+        margin: 0 auto 1rem; /* Căn giữa ảnh bằng margin auto */
+        object-fit: contain; /* Đảm bảo ảnh không bị biến dạng */
+    }
+    
+    .infor {
+        padding: 0.5rem;
+        text-align: justify;
+        width: 100%; /* Đảm bảo nội dung thông tin chiếm hết chiều rộng */
+    }
+    
+    .infor > h2 > a {
+        color: #bd945f;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-family: 'Gotham-Ultra';
+        font-size: 1.2rem; /* Giảm kích thước chữ */
+    }
+
+    .infor p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+}
+
